@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuenca Travel | Destinos y Atractivos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="pill-header-wrap">
+    <div class="pill-navbar">
+      <a href="index.html" class="pill-brand">
+        <span class="badge-icon">CT</span>
+        <strong>CUENCA TRAVEL</strong>
+      </a>
+      <nav class="pill-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html" class="active">Destinos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- BANNER DE ENCABEZADO -->
+    <section class="editorial-banner">
+      <div class="container text-center">
+        <span class="sub-badge-gold">Catálogo Patrimonial</span>
+        <h1>Atractivos Turísticos de Cuenca</h1>
+        <p>Pasa el cursor sobre cada tarjeta interactiva para descubrir su historia y actividades recomendadas.</p>
+      </div>
+    </section>
+
+    <!-- GRILLA 3D (6 DESTINOS REQUERIDOS) -->
+    <section class="section-padding bg-cream">
+      <div class="container">
+        <div class="cards-grid-3d">
+
+          <!-- 1. CATEDRAL -->
+          <article class="card-flip-container">
+            <div class="card-flip-inner">
+              <div class="card-front">
+                <img src="images/catedral.webp" onerror="this.src='https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&auto=format&fit=crop&q=80'" alt="Catedral de la Inmaculada Concepción">
+                <div class="card-front-overlay">
+                  <h3>Catedral de la Inmaculada Concepción</h3>
+                  <span class="tag">Arquitectura Colonial</span>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Catedral Nueva</h3>
+                <p class="ubicacion"><strong>Ubicación:</strong> Parque Calderón, Centro Histórico.</p>
+                <p class="descripcion">Templo monumental de estilo neorrománico con cúpulas celestes traídas de Checoslovaquia y fachada de mármol local.</p>
+                <p class="actividad"><strong>Actividad:</strong> Ascenso a la terraza mirador para admirar la panorámica del casco histórico.</p>
+                <a href="contacto.html" class="btn-card">Planear Visita</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. TURI -->
+          <article class="card-flip-container">
+            <div class="card-flip-inner">
+              <div class="card-front">
+                <img src="images/turi.webp" onerror="this.src='https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&auto=format&fit=crop&q=80'" alt="Mirador de Turi">
+                <div class="card-front-overlay">
+                  <h3>Mirador de Turi</h3>
+                  <span class="tag">Mirador Panorámico</span>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Mirador de Turi</h3>
+                <p class="ubicacion"><strong>Ubicación:</strong> Parroquia Turi, sector sur alto.</p>
+                <p class="descripcion">El balcón natural por excelencia, brindando una panorámica completa de los cuatro valles fluviales de Cuenca.</p>
+                <p class="actividad"><strong>Actividad:</strong> Fotografía al atardecer, paseo artesanal y degustación de canelazo azuayo.</p>
+                <a href="contacto.html" class="btn-card">Planear Visita</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. BARRANCO -->
+          <article class="card-flip-container">
+            <div class="card-flip-inner">
+              <div class="card-front">
+                <img src="images/barranco.webp" onerror="this.src='https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800&auto=format&fit=crop&q=80'" alt="Barranco del Tomebamba">
+                <div class="card-front-overlay">
+                  <h3>Barranco del Río Tomebamba</h3>
+                  <span class="tag">Paisaje & Paseo Fluvial</span>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>El Barranco</h3>
+                <p class="ubicacion"><strong>Ubicación:</strong> Calle Larga y Paseo 3 de Noviembre.</p>
+                <p class="descripcion">Franja arquitectónica donde las fachadas posteriores de casonas coloniales cuelgan sobre las colinas del río.</p>
+                <p class="actividad"><strong>Actividad:</strong> Caminata junto al río, descanso bajo los sauces y visita a cafeterías de especialidad.</p>
+                <a href="contacto.html" class="btn-card">Planear Visita</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. PARQUE CAJAS -->
+          <article class="card-flip-container">
+            <div class="card-flip-inner">
+              <div class="card-front">
+                <img src="images/cajas.webp" onerror="this.src='https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop&q=80'" alt="Parque Nacional Cajas">
+                <div class="card-front-overlay">
+                  <h3>Parque Nacional Cajas</h3>
+                  <span class="tag">Ecoturismo Andino</span>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Parque Cajas</h3>
+                <p class="ubicacion"><strong>Ubicación:</strong> A 33 km al oeste de la ciudad (Vía al Guayas).</p>
+                <p class="descripcion">Páramo andino de origen glaciar con más de 200 lagunas conectadas y bosques mágicos de quenua (papel).</p>
+                <p class="actividad"><strong>Actividad:</strong> Trekking de altura por la Laguna Toreadora y avistamiento de cóndores andinos.</p>
+                <a href="contacto.html" class="btn-card">Planear Visita</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. PUMAPUNGO -->
+          <article class="card-flip-container">
+            <div class="card-flip-inner">
+              <div class="card-front">
+                <img src="images/pumapungo.webp" onerror="this.src='https://images.unsplash.com/photo-1589802829985-817e51171b92?w=800&auto=format&fit=crop&q=80'" alt="Parque Arqueológico Pumapungo">
+                <div class="card-front-overlay">
+                  <h3>Parque Arqueológico Pumapungo</h3>
+                  <span class="tag">Arqueología & Memoria</span>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Pumapungo</h3>
+                <p class="ubicacion"><strong>Ubicación:</strong> Calle Larga y Avenida Huayna Cápac.</p>
+                <p class="descripcion">Vestigios del complejo imperial inca de Tomebamba, terrazas agrícolas escalonadas y canal sagrado de piedra.</p>
+                <p class="actividad"><strong>Actividad:</strong> Exploración botánica por las terrazas y recorrido etnográfico por sus salas de museo.</p>
+                <a href="contacto.html" class="btn-card">Planear Visita</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. PLAZA DE LAS FLORES -->
+          <article class="card-flip-container">
+            <div class="card-flip-inner">
+              <div class="card-front">
+                <img src="images/flores.webp" onerror="this.src='https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&auto=format&fit=crop&q=80'" alt="Plaza de las Flores">
+                <div class="card-front-overlay">
+                  <h3>Plaza de las Flores & Santa Ana</h3>
+                  <span class="tag">Tradición & Vida Local</span>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Plaza de las Flores</h3>
+                <p class="ubicacion"><strong>Ubicación:</strong> Plazoleta Carmen de la Asunción.</p>
+                <p class="descripcion">Reconocido internacionalmente como uno de los mercados de flores abiertos más fotogénicos de Sudamérica.</p>
+                <p class="actividad"><strong>Actividad:</strong> Probar el agua de pítimas tradicional preparada por las monjas de clausura.</p>
+                <a href="contacto.html" class="btn-card">Planear Visita</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-editorial">
+    <div class="container footer-clean-grid">
+      <div>
+        <h4 class="footer-logo">CUENCA TRAVEL</h4>
+        <p>Agencia especializada en turismo receptivo, rutas culturales y naturaleza andina en Azuay, Ecuador.</p>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Ubicación</h5>
+        <p>Centro Histórico, Calle Bolívar y Benigno Malo</p>
+        <p>Cuenca, Ecuador</p>
+        <p>info@cuencatravel.ec</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; 2026 Cuenca Travel · Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
