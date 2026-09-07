@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuenca Travel | Destinos y Atractivos</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,11 @@
   <header class="pill-header-wrap">
     <div class="pill-navbar">
       <a href="index.html" class="pill-brand">
-        <span class="badge-icon">CT</span>
-        <strong>CUENCA TRAVEL</strong>
+        <img src="images/logo.png" alt="Cuenca Travel Logo" class="brand-logo-img">
+        <div class="brand-text-group">
+          <strong>CUENCA TRAVEL</strong>
+          <span class="brand-sub">AGENCIA AZUAY</span>
+        </div>
       </a>
       <nav class="pill-nav">
         <ul>
@@ -31,16 +35,15 @@
   </header>
 
   <main>
-    <!-- BANNER DE ENCABEZADO -->
     <section class="editorial-banner">
       <div class="container text-center">
         <span class="sub-badge-gold">Catálogo Patrimonial</span>
         <h1>Atractivos Turísticos de Cuenca</h1>
-        <p>Pasa el cursor sobre cada tarjeta interactiva para descubrir su historia y actividades recomendadas.</p>
+        <p>Pasa el cursor sobre cada tarjeta interactiva para descubrir su historia, ubicación y actividades recomendadas.</p>
       </div>
     </section>
 
-    <!-- GRILLA 3D (6 DESTINOS REQUERIDOS) -->
+    <!-- GRILLA 3D CON 6 DESTINOS -->
     <section class="section-padding bg-cream">
       <div class="container">
         <div class="cards-grid-3d">
@@ -49,7 +52,7 @@
           <article class="card-flip-container">
             <div class="card-flip-inner">
               <div class="card-front">
-                <img src="images/catedral.webp" onerror="this.src='https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&auto=format&fit=crop&q=80'" alt="Catedral de la Inmaculada Concepción">
+                <img src="images/catedral.webp" alt="Catedral de la Inmaculada Concepción">
                 <div class="card-front-overlay">
                   <h3>Catedral de la Inmaculada Concepción</h3>
                   <span class="tag">Arquitectura Colonial</span>
@@ -58,8 +61,8 @@
               <div class="card-back">
                 <h3>Catedral Nueva</h3>
                 <p class="ubicacion"><strong>Ubicación:</strong> Parque Calderón, Centro Histórico.</p>
-                <p class="descripcion">Templo monumental de estilo neorrománico con cúpulas celestes traídas de Checoslovaquia y fachada de mármol local.</p>
-                <p class="actividad"><strong>Actividad:</strong> Ascenso a la terraza mirador para admirar la panorámica del casco histórico.</p>
+                <p class="descripcion">Monumento insignia de estilo neorrománico con cúpulas celestes traídas de Europa y mármol cuencano.</p>
+                <p class="actividad"><strong>Actividad:</strong> Ascenso a la terraza mirador para contemplar la vista panorámica del casco colonial.</p>
                 <a href="contacto.html" class="btn-card">Planear Visita</a>
               </div>
             </div>
@@ -69,7 +72,7 @@
           <article class="card-flip-container">
             <div class="card-flip-inner">
               <div class="card-front">
-                <img src="images/turi.webp" onerror="this.src='https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&auto=format&fit=crop&q=80'" alt="Mirador de Turi">
+                <img src="images/turi.webp" alt="Mirador de Turi">
                 <div class="card-front-overlay">
                   <h3>Mirador de Turi</h3>
                   <span class="tag">Mirador Panorámico</span>
@@ -77,9 +80,9 @@
               </div>
               <div class="card-back">
                 <h3>Mirador de Turi</h3>
-                <p class="ubicacion"><strong>Ubicación:</strong> Parroquia Turi, sector sur alto.</p>
-                <p class="descripcion">El balcón natural por excelencia, brindando una panorámica completa de los cuatro valles fluviales de Cuenca.</p>
-                <p class="actividad"><strong>Actividad:</strong> Fotografía al atardecer, paseo artesanal y degustación de canelazo azuayo.</p>
+                <p class="ubicacion"><strong>Ubicación:</strong> Parroquia Turi, sector alto sur.</p>
+                <p class="descripcion">Balcón natural privilegiado que brinda la panorámica más completa sobre los valles fluviales de Cuenca.</p>
+                <p class="actividad"><strong>Actividad:</strong> Fotografía al atardecer, paseo artesanal y degustación de bebidas tradicionales azuayas.</p>
                 <a href="contacto.html" class="btn-card">Planear Visita</a>
               </div>
             </div>
@@ -89,17 +92,17 @@
           <article class="card-flip-container">
             <div class="card-flip-inner">
               <div class="card-front">
-                <img src="images/barranco.webp" onerror="this.src='https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800&auto=format&fit=crop&q=80'" alt="Barranco del Tomebamba">
+                <img src="images/barranco.webp" alt="Barranco del Río Tomebamba">
                 <div class="card-front-overlay">
                   <h3>Barranco del Río Tomebamba</h3>
-                  <span class="tag">Paisaje & Paseo Fluvial</span>
+                  <span class="tag">Paseo Fluvial</span>
                 </div>
               </div>
               <div class="card-back">
                 <h3>El Barranco</h3>
-                <p class="ubicacion"><strong>Ubicación:</strong> Calle Larga y Paseo 3 de Noviembre.</p>
-                <p class="descripcion">Franja arquitectónica donde las fachadas posteriores de casonas coloniales cuelgan sobre las colinas del río.</p>
-                <p class="actividad"><strong>Actividad:</strong> Caminata junto al río, descanso bajo los sauces y visita a cafeterías de especialidad.</p>
+                <p class="ubicacion"><strong>Ubicación:</strong> Paseo 3 de Noviembre y Calle Larga.</p>
+                <p class="descripcion">Borde arquitectónico donde casonas republicanas y coloniales descansan sobre la ladera del río.</p>
+                <p class="actividad"><strong>Actividad:</strong> Paseo bajo los sauces ribereños, visita a talleres culturales y cafeterías con terraza.</p>
                 <a href="contacto.html" class="btn-card">Planear Visita</a>
               </div>
             </div>
@@ -109,7 +112,7 @@
           <article class="card-flip-container">
             <div class="card-flip-inner">
               <div class="card-front">
-                <img src="images/cajas.webp" onerror="this.src='https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop&q=80'" alt="Parque Nacional Cajas">
+                <img src="images/cajas.webp" alt="Parque Nacional Cajas">
                 <div class="card-front-overlay">
                   <h3>Parque Nacional Cajas</h3>
                   <span class="tag">Ecoturismo Andino</span>
@@ -117,9 +120,9 @@
               </div>
               <div class="card-back">
                 <h3>Parque Cajas</h3>
-                <p class="ubicacion"><strong>Ubicación:</strong> A 33 km al oeste de la ciudad (Vía al Guayas).</p>
-                <p class="descripcion">Páramo andino de origen glaciar con más de 200 lagunas conectadas y bosques mágicos de quenua (papel).</p>
-                <p class="actividad"><strong>Actividad:</strong> Trekking de altura por la Laguna Toreadora y avistamiento de cóndores andinos.</p>
+                <p class="ubicacion"><strong>Ubicación:</strong> A 33 km al oeste de la ciudad (Vía Molleturo).</p>
+                <p class="descripcion">Ecosistema de páramo de origen glaciar con más de 200 lagunas conectadas y formaciones rocosas únicas.</p>
+                <p class="actividad"><strong>Actividad:</strong> Senderismo por la Laguna Toreadora, avistamiento de aves y exploración del bosque de papel.</p>
                 <a href="contacto.html" class="btn-card">Planear Visita</a>
               </div>
             </div>
@@ -129,17 +132,17 @@
           <article class="card-flip-container">
             <div class="card-flip-inner">
               <div class="card-front">
-                <img src="images/pumapungo.webp" onerror="this.src='https://images.unsplash.com/photo-1589802829985-817e51171b92?w=800&auto=format&fit=crop&q=80'" alt="Parque Arqueológico Pumapungo">
+                <img src="images/pumapungo.webp" alt="Parque Arqueológico Pumapungo">
                 <div class="card-front-overlay">
                   <h3>Parque Arqueológico Pumapungo</h3>
-                  <span class="tag">Arqueología & Memoria</span>
+                  <span class="tag">Historia & Arqueología</span>
                 </div>
               </div>
               <div class="card-back">
                 <h3>Pumapungo</h3>
-                <p class="ubicacion"><strong>Ubicación:</strong> Calle Larga y Avenida Huayna Cápac.</p>
-                <p class="descripcion">Vestigios del complejo imperial inca de Tomebamba, terrazas agrícolas escalonadas y canal sagrado de piedra.</p>
-                <p class="actividad"><strong>Actividad:</strong> Exploración botánica por las terrazas y recorrido etnográfico por sus salas de museo.</p>
+                <p class="ubicacion"><strong>Ubicación:</strong> Calle Larga y Av. Huayna Cápac.</p>
+                <p class="descripcion">Antigua ciudad administrativa y ceremonial cañari-inca de Tomebamba con terrazas escalonadas y canales de agua.</p>
+                <p class="actividad"><strong>Actividad:</strong> Recorrido por el canal ceremonial, jardines etnobotánicos y salas del museo nacional.</p>
                 <a href="contacto.html" class="btn-card">Planear Visita</a>
               </div>
             </div>
@@ -149,7 +152,7 @@
           <article class="card-flip-container">
             <div class="card-flip-inner">
               <div class="card-front">
-                <img src="images/flores.webp" onerror="this.src='https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&auto=format&fit=crop&q=80'" alt="Plaza de las Flores">
+                <img src="images/flores.webp" alt="Plaza de las Flores">
                 <div class="card-front-overlay">
                   <h3>Plaza de las Flores & Santa Ana</h3>
                   <span class="tag">Tradición & Vida Local</span>
@@ -158,8 +161,8 @@
               <div class="card-back">
                 <h3>Plaza de las Flores</h3>
                 <p class="ubicacion"><strong>Ubicación:</strong> Plazoleta Carmen de la Asunción.</p>
-                <p class="descripcion">Reconocido internacionalmente como uno de los mercados de flores abiertos más fotogénicos de Sudamérica.</p>
-                <p class="actividad"><strong>Actividad:</strong> Probar el agua de pítimas tradicional preparada por las monjas de clausura.</p>
+                <p class="descripcion">Reconocido mundialmente como uno de los mercados florales a cielo abierto más pintorescos de América Latina.</p>
+                <p class="actividad"><strong>Actividad:</strong> Adquirir arreglos florales autóctonos y probar la infusión conventual de agua de pítimas.</p>
                 <a href="contacto.html" class="btn-card">Planear Visita</a>
               </div>
             </div>

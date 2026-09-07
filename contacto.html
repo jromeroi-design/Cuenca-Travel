@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuenca Travel | Contacto y Reservas</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,11 @@
   <header class="pill-header-wrap">
     <div class="pill-navbar">
       <a href="index.html" class="pill-brand">
-        <span class="badge-icon">CT</span>
-        <strong>CUENCA TRAVEL</strong>
+        <img src="images/logo.png" alt="Cuenca Travel Logo" class="brand-logo-img">
+        <div class="brand-text-group">
+          <strong>CUENCA TRAVEL</strong>
+          <span class="brand-sub">AGENCIA AZUAY</span>
+        </div>
       </a>
       <nav class="pill-nav">
         <ul>
@@ -35,7 +39,7 @@
       <div class="container text-center">
         <span class="sub-badge-gold">Atención Personalizada</span>
         <h1>Reserva tu Experiencia</h1>
-        <p>Completa los datos de tu viaje y nuestro equipo de guías te enviará una propuesta confirmada.</p>
+        <p>Completa tus datos de viaje y nuestro equipo te responderá con una propuesta a medida y disponibilidad confirmada.</p>
       </div>
     </section>
 
@@ -44,24 +48,24 @@
       <div class="container">
         <div class="contact-editorial-layout">
 
-          <!-- BLOQUE DE INFORMACIÓN -->
+          <!-- INFORMACIÓN -->
           <div class="contact-editorial-info">
             <span class="meta-tag">Canales Oficiales</span>
             <h2>Estamos en Cuenca</h2>
-            <p>Visítanos en nuestras oficinas patrimoniales o contáctanos directamente a través de nuestros canales digitales.</p>
+            <p>Comunícate directamente con nuestros coordinadores o visítanos en nuestras oficinas del casco colonial.</p>
 
             <div class="contact-info-pill">
-              <strong>Dirección:</strong>
+              <strong>Dirección Principal:</strong>
               <p>Calle Simón Bolívar y Benigno Malo, Edificio Colonial, Cuenca, Ecuador</p>
             </div>
 
             <div class="contact-info-pill">
-              <strong>Teléfono / WhatsApp:</strong>
+              <strong>Teléfonos / WhatsApp:</strong>
               <p>+593 7 283 0000 / +593 99 123 4567</p>
             </div>
 
             <div class="contact-info-pill">
-              <strong>Correo Institucional:</strong>
+              <strong>Correo Electrónico:</strong>
               <p>reservas@cuencatravel.ec</p>
             </div>
 
@@ -71,7 +75,7 @@
             </div>
           </div>
 
-          <!-- FORMULARIO HTML5 REQUERIDO -->
+          <!-- FORMULARIO SEMÁNTICO CON VALIDACIONES -->
           <div class="contact-form-container">
             <form action="#" method="POST" class="form-clean">
               
@@ -94,7 +98,7 @@
                 <div class="form-group">
                   <label for="destino">Destino o Actividad Principal *</label>
                   <select id="destino" name="destino" required>
-                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="" disabled selected>Selecciona un destino</option>
                     <option value="catedral">Catedral de la Inmaculada Concepción</option>
                     <option value="turi">Mirador de Turi</option>
                     <option value="barranco">Barranco del Río Tomebamba</option>
@@ -112,7 +116,7 @@
                 </div>
                 <div class="form-group">
                   <label for="personas">Número de Personas *</label>
-                  <input type="number" id="personas" name="personas" min="1" max="25" placeholder="1" required>
+                  <input type="number" id="personas" name="personas" min="1" max="30" placeholder="1" required>
                 </div>
               </div>
 
@@ -130,7 +134,7 @@
 
               <div class="form-group">
                 <label for="mensaje">Mensaje o Requerimientos Especiales</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indícanos si viajas con niños, adultos mayores o si tienes alguna consulta específica..."></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indícanos si viajas con niños, adultos mayores o alguna preferencia alimenticia..."></textarea>
               </div>
 
               <button type="submit" class="btn-pill-gold btn-block-custom">Enviar Solicitud de Reserva</button>
