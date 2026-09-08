@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR CÁPSULA FLOTANTE -->
   <header class="pill-header-wrap">
     <div class="pill-navbar">
       <a href="index.html" class="pill-brand">
@@ -43,12 +43,12 @@
       </div>
     </section>
 
-    <!-- CONTACTO Y FORMULARIO EVALUADO -->
+    <!-- SECCIÓN CONTACTO -->
     <section class="section-padding bg-cream">
       <div class="container">
         <div class="contact-editorial-layout">
 
-          <!-- INFORMACIÓN -->
+          <!-- INFORMACIÓN DE CONTACTO -->
           <div class="contact-editorial-info">
             <span class="meta-tag">Canales Oficiales</span>
             <h2>Estamos en Cuenca</h2>
@@ -75,9 +75,23 @@
             </div>
           </div>
 
-          <!-- FORMULARIO SEMÁNTICO CON VALIDACIONES -->
+          <!-- CONTENEDOR DE FORMULARIO / MENSAJE DE CONFIRMACIÓN -->
           <div class="contact-form-container">
-            <form action="#" method="POST" class="form-clean">
+            
+            <!-- TARJETA DE CONFIRMACIÓN (INICIALMENTE OCULTA) -->
+            <div id="mensaje-exito" class="mensaje-confirmacion" style="display: none;">
+              <div class="icono-check">✦</div>
+              <h3>¡Solicitud Recibida con Éxito!</h3>
+              <p>Gracias por contactar a <strong>Cuenca Travel</strong>. Hemos registrado tu itinerario correctamente.</p>
+              <div class="detalle-reserva-caja">
+                <p id="resumen-envio"></p>
+              </div>
+              <p class="nota-atencion">Uno de nuestros coordinadores locales se comunicará contigo vía WhatsApp o correo electrónico para confirmar disponibilidad e itinerario final.</p>
+              <button type="button" id="btn-nueva-reserva" class="btn-pill-gold">Enviar otra solicitud</button>
+            </div>
+
+            <!-- FORMULARIO SEMÁNTICO -->
+            <form id="form-reserva" class="form-clean">
               
               <div class="form-row">
                 <div class="form-group">
@@ -99,12 +113,12 @@
                   <label for="destino">Destino o Actividad Principal *</label>
                   <select id="destino" name="destino" required>
                     <option value="" disabled selected>Selecciona un destino</option>
-                    <option value="catedral">Catedral de la Inmaculada Concepción</option>
-                    <option value="turi">Mirador de Turi</option>
-                    <option value="barranco">Barranco del Río Tomebamba</option>
-                    <option value="cajas">Parque Nacional Cajas</option>
-                    <option value="pumapungo">Parque Arqueológico Pumapungo</option>
-                    <option value="flores">Plaza de las Flores</option>
+                    <option value="Catedral de la Inmaculada Concepción">Catedral de la Inmaculada Concepción</option>
+                    <option value="Mirador de Turi">Mirador de Turi</option>
+                    <option value="Barranco del Río Tomebamba">Barranco del Río Tomebamba</option>
+                    <option value="Parque Nacional Cajas">Parque Nacional Cajas</option>
+                    <option value="Parque Arqueológico Pumapungo">Parque Arqueológico Pumapungo</option>
+                    <option value="Plaza de las Flores">Plaza de las Flores</option>
                   </select>
                 </div>
               </div>
@@ -124,11 +138,11 @@
                 <label for="servicio">Tipo de Servicio *</label>
                 <select id="servicio" name="servicio" required>
                   <option value="" disabled selected>Selecciona tu paquete</option>
-                  <option value="tour-colonial">Cuenca Colonial & Cúpulas ($25.00)</option>
-                  <option value="cajas-trekking">Expedición Páramo de Cajas ($45.00)</option>
-                  <option value="ruta-gastronomica">Ruta Sabores Cuencanos ($35.00)</option>
-                  <option value="chordeleg-artesanal">Gualaceo & Filigrana Chordeleg ($40.00)</option>
-                  <option value="personalizado">Servicio Exclusivo a Medida</option>
+                  <option value="Cuenca Colonial & Cúpulas ($25.00)">Cuenca Colonial & Cúpulas ($25.00)</option>
+                  <option value="Expedición Páramo de Cajas ($45.00)">Expedición Páramo de Cajas ($45.00)</option>
+                  <option value="Ruta Sabores Cuencanos ($35.00)">Ruta Sabores Cuencanos ($35.00)</option>
+                  <option value="Gualaceo & Filigrana Chordeleg ($40.00)">Gualaceo & Filigrana Chordeleg ($40.00)</option>
+                  <option value="Servicio Exclusivo a Medida">Servicio Exclusivo a Medida</option>
                 </select>
               </div>
 
@@ -175,5 +189,33 @@
     </div>
   </footer>
 
+  <!-- SCRIPT DE VALIDACIÓN Y CONFIRMACIÓN SIN RECARGA -->
+  <script>
+    const form = document.getElementById('form-reserva');
+    const mensajeExito = document.getElementById('mensaje-exito');
+    const resumenEnvio = document.getElementById('resumen-envio');
+    const btnNuevaReserva = document.getElementById('btn-nueva-reserva');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById('nombre').value;
+      const paquete = document.getElementById('servicio').value;
+      const destino = document.getElementById('destino').value;
+      const personas = document.getElementById('personas').value;
+      const fecha = document.getElementById('fecha').value;
+
+      resumenEnvio.innerHTML = `Estimado/a <strong>${nombre}</strong>, tu solicitud para <strong>${personas} persona(s)</strong> hacia <strong>${destino}</strong> (${paquete}) con fecha <strong>${fecha}</strong> se encuentra: <span style="color:#10382d; font-weight:700;">REGISTRADA</span>.`;
+
+      form.style.display = 'none';
+      mensajeExito.style.display = 'block';
+    });
+
+    btnNuevaReserva.addEventListener('click', function() {
+      form.reset();
+      mensajeExito.style.display = 'none';
+      form.style.display = 'block';
+    });
+  </script>
 </body>
 </html>

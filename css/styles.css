@@ -250,7 +250,7 @@ ul {
   transform: translateY(-2px);
 }
 
-/* COMPOSICIÓN VISUAL CON SPARKLES Y TARJETA */
+/* COMPOSICIÓN VISUAL */
 .editorial-visual {
   display: flex;
   justify-content: center;
@@ -902,6 +902,58 @@ ul {
   border-color: #10382d;
   background-color: #ffffff;
   box-shadow: 0 0 0 4px rgba(16, 56, 45, 0.12);
+}
+
+/* MENSAJE DE CONFIRMACIÓN DE RESERVA */
+.mensaje-confirmacion {
+  text-align: center;
+  padding: 30px 10px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.icono-check {
+  font-size: 2.5rem;
+  color: var(--gold-accent);
+  margin-bottom: 12px;
+}
+
+.mensaje-confirmacion h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: #10382d;
+  margin-bottom: 12px;
+}
+
+.mensaje-confirmacion p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.detalle-reserva-caja {
+  background-color: #f0f5f2;
+  border-left: 4px solid #10382d;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  text-align: left;
+}
+
+.detalle-reserva-caja p {
+  color: #1b2621;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.nota-atencion {
+  font-size: 0.85rem !important;
+  color: #5e6d65;
+  margin-bottom: 25px;
 }
 
 /* ===================================================
