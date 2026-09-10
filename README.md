@@ -22,3 +22,6 @@ Sitio web desarrollado para la agencia turística **Cuenca Travel**, enfocado en
 ## Enlaces Públicos
 - **Repositorio:** https://github.com/jromeroi-design/Cuenca-Travel
 - **Sitio Web en Vivo:** https://jromeroi-design.github.io/Cuenca-Travel/
+
+## Captura del Sitio Web
+![Vista previa del sitio](images/preview.png)
