@@ -189,33 +189,5 @@
     </div>
   </footer>
 
-  <!-- SCRIPT DE VALIDACIÓN Y CONFIRMACIÓN SIN RECARGA -->
-  <script>
-    const form = document.getElementById('form-reserva');
-    const mensajeExito = document.getElementById('mensaje-exito');
-    const resumenEnvio = document.getElementById('resumen-envio');
-    const btnNuevaReserva = document.getElementById('btn-nueva-reserva');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const nombre = document.getElementById('nombre').value;
-      const paquete = document.getElementById('servicio').value;
-      const destino = document.getElementById('destino').value;
-      const personas = document.getElementById('personas').value;
-      const fecha = document.getElementById('fecha').value;
-
-      resumenEnvio.innerHTML = `Estimado/a <strong>${nombre}</strong>, tu solicitud para <strong>${personas} persona(s)</strong> hacia <strong>${destino}</strong> (${paquete}) con fecha <strong>${fecha}</strong> se encuentra: <span style="color:#10382d; font-weight:700;">REGISTRADA</span>.`;
-
-      form.style.display = 'none';
-      mensajeExito.style.display = 'block';
-    });
-
-    btnNuevaReserva.addEventListener('click', function() {
-      form.reset();
-      mensajeExito.style.display = 'none';
-      form.style.display = 'block';
-    });
-  </script>
 </body>
 </html>
